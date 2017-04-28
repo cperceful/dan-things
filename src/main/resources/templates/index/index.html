@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body class="container">
+<h1 th:text="${title}"></h1>
+<h3><a href="/submit">Submit Danism</a></h3>
+
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Story</th>
+    </tr>
+
+    <tr th:each="danism : ${danisms}">
+        <td th:text="${danism.title}"></td>
+        <td th:text="${danism.body}"></td>
+
+    </tr>
+</table>
+
+</body>
+</html>
