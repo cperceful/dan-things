@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
+
 /**
  * Controller for handling root requests
  */
@@ -50,4 +51,6 @@ public class IndexController {
 
         return "redirect:";
     }
+
+    //TODO: create login request handler
 }
